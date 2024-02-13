@@ -153,18 +153,13 @@ header h2 {
 }
 
 .modal-field {
-  width: calc(50% - 10px);
-  height: 20px;
-  outline-style: none;
-  border-style: none;
-  box-shadow: 0 0 2px black;
-  padding: 0 10px;
-  font-size: 1rem;
+  border: none;
+  padding: 2px;
+  border-bottom: 1px solid;
+  outline: none;
 }
-
-.modal-field:focus {
-  border: 2px solid;
-  box-shadow: 0 0 3px;
+.modal-field::placeholder {
+  color: #ccc;
 }
 
 .modal-footer {
