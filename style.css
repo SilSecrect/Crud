@@ -95,7 +95,6 @@ strong {
   background: #00000090;
   opacity: 0;
   z-index: -1;
-  overflow: auto;
 }
 
 .modal.active {
@@ -155,7 +154,7 @@ header h2 {
 
 .modal-field {
   width: calc(50% - 10px);
-  height: 40px;
+  height: 20px;
   outline-style: none;
   border-style: none;
   box-shadow: 0 0 2px black;
