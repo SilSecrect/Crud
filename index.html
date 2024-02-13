@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela Planilha</title>
+    <script
+      src="https://kit.fontawesome.com/7271b5d267.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="favinco.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <script src="cep.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" class="image-logo" alt="" />
+      <nav class="header">
+        <li>
+          <a href="#" class="navbar"
+            >Home <i class="fa-solid fa-house fa-beat icon"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" class="navbar"
+            >Contato <i class="fa-solid fa-phone-flip fa-beat icon"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" class="navbar"
+            >Github <i class="fa-brands fa-github fa-beat icon"></i
+          ></a>
+        </li>
+      </nav>
+    </header>
+
+    <section class="corpo-section">
+      <button
+        type="button"
+        class="button blue mobile"
+        id="cadastrarCliente"
+      >
+        Nova Lista <i class="fa-regular fa-rectangle-list fa-beat"></i>
+      </button>
+
+      <table id="table" class="records">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Celular</th>
+            <th>CEP</th>
+            <th>UF</th>
+            <th>Cidade</th>
+            <th>Bairro</th>
+            <th>Endereço</th>
+            <th>Nº</th>
+            <th>Situação</th>
+          </tr>
+        </thead>
+        <tbody id="tablebody">
+          <tr id="tr"></tr>
+        </tbody>
+      </table>
+
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h2>Novo Cliente</h2>
+            <span class="modal-close" id="modalClose"
+              >&#10006;</span
+            >
+          </header>
+          <form class="modal-form" id="form">
+            <input
+              type="text"
+              class="modal-field"
+              data-index="new"
+              placeholder="Nome do Cliente"
+              id="nome"
+              required
+              
+            />
+            <input
+              type="email"
+              class="modal-field"
+              placeholder="e-mail do Cliente"
+              id="email"
+              required
+              
+            />
+            <input
+              type="text"
+              class="modal-field"
+              placeholder="Celular do Cliente"
+              id="celular"
+              required
+             
+            />
+            <input
+              type="text"
+              class="modal-field"
+              placeholder="CEP do Cliente"
+              id="cep"
+              required
+             
+            />
+            <input
+              type="text"
+              class="modal-field"
+              placeholder="UF do Cliente"
+              id="uf"
+              required
+              
+            />
+            <input
+              type="text"
+              class="modal-field"
+              placeholder="Cidade do Cliente"
+              id="cidade"
+              required
+              
+            />
+            <input
+              type="text"
+              class="modal-field"
+              placeholder="Bairro do Cliente"
+              id="bairro"
+              required
+              
+            />
+            <input
+              type="text"
+              class="modal-field"
+              placeholder="Rua do Cliente"
+              id="rua"
+              required
+              
+            />
+            <input
+              type="text"
+              class="modal-field"
+              placeholder="Nº do Cliente"
+              id="numero"
+              required
+              
+            />
+          </form>
+          <footer class="modal-footer">
+            <button class="button green" id="salvar">Salvar</button>
+            <button class="button blue" id="cancelar">Cancelar</button>
+          </footer>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
